@@ -1,19 +1,19 @@
 
-Kmain.Main#Translate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java ("1*˝
+Kmain.Main#translate(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;U
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java ("1*π
 1U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java$ (*É
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java$ (*É
 Ä
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java$ (-
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java$ (-
 %0java.io.InputStream"__id*
 ""ÜÉ
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (#
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (#
 %1java.util.Scanner"java.util.Scanner 
 «
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (.
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (.
 %2"0java.util.Scanner#<init>(Ljava/io/InputStream;)V*
 
 %1java.util.Scanner*
@@ -21,38 +21,37 @@ K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java
 %0java.io.InputStreamó
 î
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (/
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (/
 inputjava.util.Scanner"__id*
 
-%1java.util.Scannerõ
-ò
+%1java.util.Scannerà
+Ö
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (
-%3java.util.logging.Logger"__id**
-	main.Main"
-loggerèå
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (
+%3java.util.logging.Logger"__id*
+""èå
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (N
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (T
 
 %4void"2java.util.logging.Logger#info(Ljava/lang/String;)V* 
 
 %3java.util.logging.Logger*75
 3Escribe la oracion a traducir (espa√±ol a ingles): 2info(Ljava/lang/String;)Ã…
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java! (1
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java! (1
 %5java.lang.String".java.util.Scanner#nextLine()Ljava/lang/String;*
 
 inputjava.util.Scanner2
 nextLine()ü
 ú
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (2#
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (2#
 textToTranslatejava.lang.String"__id*
 
 %5java.lang.StringÂ
 ‚
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java" (c
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (P
 %6java.lang.String"htranslate.Translator#translate(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;*"
 translate.Translator*#
 !
@@ -60,17 +59,11 @@ K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java"
 
 translateTojava.lang.String*%
 #
-textToTranslatejava.lang.String†
-ù
+textToTranslatejava.lang.String"q
 U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (d$
-resultTranslatedjava.lang.String"__id*
+K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java (Q
 
-%6java.lang.String"
-U
-K/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/main/Main.java ( &
-$
-resultTranslatedjava.lang.String:!
+%6java.lang.String:!
 translateFromjava.lang.String:
 translateTojava.lang.StringB
 	main.Main

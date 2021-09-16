@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="translatorTest.TranslatorTest" time="7.024" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="translatorTest.TranslatorTest" time="5.905" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+0"/>
@@ -58,14 +58,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderConnSuccess" time="0.263"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateFail" time="4.593"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateSuccess" time="2.156"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderUserAgentSuccess" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyFrom" time="0.004"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderConnSuccess" time="0.269"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateFail" time="4.023"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateSuccess" time="1.605"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderUserAgentSuccess" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyFrom" time="0.001"/>
   <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyText" time="0.001"/>
   <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyTo" time="0"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailFullText" time="0.004"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderFail" time="0.002"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderSuccess" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailFullText" time="0.001"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderFail" time="0.004"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderSuccess" time="0.001"/>
 </testsuite>

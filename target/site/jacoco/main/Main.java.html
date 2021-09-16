@@ -4,29 +4,23 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 import translate.Translator;
-<span class="nc" id="L7">public class Main {</span>
-    static final String englishLenguage = &quot;en&quot;;
-    static final String spanishLenguage = &quot;es&quot;;
-    public Logger logger;
+
+<span class="nc" id="L8">public class Main {</span>
+    static final String EnglishLanguage = &quot;en&quot;;
+    static final String SpanishLanguage = &quot;es&quot;;
+<span class="nc" id="L11">    static final Logger CustomLogger = Logger.getLogger(Main.class.getName());</span>
 
     public void main(String[] args) throws Exception {
-        Logger newLogger;
-<span class="nc" id="L14">        newLogger = Logger.getLogger(Main.class.getName());</span>
-<span class="nc" id="L15">        this.logger = newLogger;</span>
+<span class="nc" id="L14">        String result = this.translate(SpanishLanguage, EnglishLanguage);</span>
+<span class="nc" id="L15">        this.CustomLogger.info(String.format( &quot;Texto traducido: %s&quot; , result));</span>
+<span class="nc" id="L16">    }</span>
 
-<span class="nc" id="L17">        String result = Translate(spanishLenguage, englishLenguage);</span>
-<span class="nc" id="L18">        this.logger.info(&quot;Texto traducido: &quot; + result);</span>
-<span class="nc" id="L19">    }</span>
+    public String translate(String translateFrom, String translateTo) throws IOException {
+<span class="nc" id="L19">        Scanner input = new Scanner(System.in);</span>
+<span class="nc" id="L20">        this.CustomLogger.info(&quot;Escribe la oracion a traducir (español a ingles): &quot;);</span>
+<span class="nc" id="L21">        String textToTranslate = input.nextLine();</span>
 
-    public String Translate(String translateFrom, String translateTo) throws IOException {
-<span class="nc" id="L22">        Scanner input = new Scanner(System.in);</span>
-<span class="nc" id="L23">        this.logger.info(&quot;Escribe la oracion a traducir (español a ingles): &quot;);</span>
-
-<span class="nc" id="L25">        String textToTranslate = input.nextLine();</span>
-
-<span class="nc" id="L27">        String resultTranslated = Translator.translate(translateFrom, translateTo, textToTranslate);</span>
-
-<span class="nc" id="L29">        return resultTranslated;</span>
+<span class="nc" id="L23">        return Translator.translate(translateFrom, translateTo, textToTranslate);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

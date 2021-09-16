@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-16T00:12:17 PET" name="translatorTest.TranslatorTest" finished-at="2021-09-16T00:12:24 PET" duration-ms="7210">
+  <suite started-at="2021-09-16T00:22:36 PET" name="translatorTest.TranslatorTest" finished-at="2021-09-16T00:22:42 PET" duration-ms="6021">
     <groups>
     </groups>
-    <test started-at="2021-09-16T00:12:17 PET" name="Command line test" finished-at="2021-09-16T00:12:24 PET" duration-ms="7210">
+    <test started-at="2021-09-16T00:22:36 PET" name="Command line test" finished-at="2021-09-16T00:22:42 PET" duration-ms="6021">
       <class name="translatorTest.TranslatorTest">
-        <test-method signature="TestConnBuilderConnSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:17 PET" name="TestConnBuilderConnSuccess" finished-at="2021-09-16T00:12:18 PET" duration-ms="263" status="PASS">
+        <test-method signature="TestConnBuilderConnSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:36 PET" name="TestConnBuilderConnSuccess" finished-at="2021-09-16T00:22:37 PET" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestConnBuilderConnSuccess -->
-        <test-method signature="TestConnBuilderTranslateFail()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:18 PET" name="TestConnBuilderTranslateFail" finished-at="2021-09-16T00:12:22 PET" duration-ms="4589" status="PASS">
+        <test-method signature="TestConnBuilderTranslateFail()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:37 PET" name="TestConnBuilderTranslateFail" finished-at="2021-09-16T00:22:41 PET" duration-ms="4008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestConnBuilderTranslateFail -->
-        <test-method signature="TestConnBuilderTranslateSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:22 PET" name="TestConnBuilderTranslateSuccess" finished-at="2021-09-16T00:12:24 PET" duration-ms="2148" status="PASS">
+        <test-method signature="TestConnBuilderTranslateSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:41 PET" name="TestConnBuilderTranslateSuccess" finished-at="2021-09-16T00:22:42 PET" duration-ms="1601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestConnBuilderTranslateSuccess -->
-        <test-method signature="TestConnBuilderUserAgentSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestConnBuilderUserAgentSuccess" finished-at="2021-09-16T00:12:24 PET" duration-ms="2" status="PASS">
+        <test-method signature="TestConnBuilderUserAgentSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestConnBuilderUserAgentSuccess" finished-at="2021-09-16T00:22:42 PET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestConnBuilderUserAgentSuccess -->
-        <test-method signature="TestTranslateFailEmptyFrom()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestTranslateFailEmptyFrom" finished-at="2021-09-16T00:12:24 PET" duration-ms="5" status="PASS">
+        <test-method signature="TestTranslateFailEmptyFrom()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestTranslateFailEmptyFrom" finished-at="2021-09-16T00:22:42 PET" duration-ms="2" status="PASS">
           <exception class="java.io.IOException">
             <message>
               <![CDATA[no lang from given]]>
@@ -75,7 +75,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestTranslateFailEmptyFrom -->
-        <test-method signature="TestTranslateFailEmptyText()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestTranslateFailEmptyText" finished-at="2021-09-16T00:12:24 PET" duration-ms="0" status="PASS">
+        <test-method signature="TestTranslateFailEmptyText()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestTranslateFailEmptyText" finished-at="2021-09-16T00:22:42 PET" duration-ms="1" status="PASS">
           <exception class="java.io.IOException">
             <message>
               <![CDATA[Length capacity exceed or text empty]]>
@@ -127,7 +127,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestTranslateFailEmptyText -->
-        <test-method signature="TestTranslateFailEmptyTo()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestTranslateFailEmptyTo" finished-at="2021-09-16T00:12:24 PET" duration-ms="0" status="PASS">
+        <test-method signature="TestTranslateFailEmptyTo()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestTranslateFailEmptyTo" finished-at="2021-09-16T00:22:42 PET" duration-ms="0" status="PASS">
           <exception class="java.io.IOException">
             <message>
               <![CDATA[no lang to given]]>
@@ -179,7 +179,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestTranslateFailEmptyTo -->
-        <test-method signature="TestTranslateFailFullText()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestTranslateFailFullText" finished-at="2021-09-16T00:12:24 PET" duration-ms="1" status="PASS">
+        <test-method signature="TestTranslateFailFullText()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestTranslateFailFullText" finished-at="2021-09-16T00:22:42 PET" duration-ms="0" status="PASS">
           <exception class="java.io.IOException">
             <message>
               <![CDATA[Length capacity exceed or text empty]]>
@@ -231,11 +231,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestTranslateFailFullText -->
-        <test-method signature="TestUrlBuilderFail()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestUrlBuilderFail" finished-at="2021-09-16T00:12:24 PET" duration-ms="3" status="PASS">
+        <test-method signature="TestUrlBuilderFail()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestUrlBuilderFail" finished-at="2021-09-16T00:22:42 PET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestUrlBuilderFail -->
-        <test-method signature="TestUrlBuilderSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:12:24 PET" name="TestUrlBuilderSuccess" finished-at="2021-09-16T00:12:24 PET" duration-ms="0" status="PASS">
+        <test-method signature="TestUrlBuilderSuccess()[pri:0, instance:translatorTest.TranslatorTest@2fb0623e]" started-at="2021-09-16T00:22:42 PET" name="TestUrlBuilderSuccess" finished-at="2021-09-16T00:22:42 PET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestUrlBuilderSuccess -->
