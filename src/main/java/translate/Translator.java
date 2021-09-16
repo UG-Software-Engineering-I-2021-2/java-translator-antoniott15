@@ -9,8 +9,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class Translator {
-    static final String BASE_URL = "https://script.google.com/macros/s/AKfycbz9NhqBIiBztjNDKRcyI0zo3Wq12b7e-eXSDzx0wNsQf2WW-IDmJIfp6_jJJd8Sp_oO/exec";
-    static final int REQUEST_TIMEOUT = 400;
+    static final String BASE_URL = "https://script.google.com/macros/s/AKfycbxJSBqm1GK9L2Rmw9Ru3UTJpY3cnky-1-gul_Po9aL0LhWrhkK0kLlnSGvRkqsfxnp5/exec";
+    static final int REQUEST_TIMEOUT = 4000;
     static final String REQUEST_KEY = "User-Agent";
     static final String REQUEST_VALUE = "Mozilla/5.0";
 
