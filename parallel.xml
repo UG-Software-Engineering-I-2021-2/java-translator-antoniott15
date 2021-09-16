@@ -2,7 +2,7 @@
 <suite name="Suite" thread-count="80" parallel="classes">
     <test name="80 Test in parallel" group-by-instances="true">
         <classes>
-            <class name="translatorTest.TranslatorParallel"/>
+            <class name="translatorTest.TranslatorParallelTest"/>
         </classes>
     </test>
 </suite>

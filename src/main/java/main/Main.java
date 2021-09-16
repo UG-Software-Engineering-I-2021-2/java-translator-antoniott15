@@ -17,9 +17,9 @@ public class Main {
 
         try {
             String response = Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate);
-            CUSTOM_LOGGER.info(String.format("La oracion al ingles es: %s", response));
+            CUSTOM_LOGGER.info("La oracion al ingles es: " + response);
         }catch (IOException e) {
-            CUSTOM_LOGGER.info(String.format("Whoops something goes bad:{0} ", e));
+            CUSTOM_LOGGER.info("Whoops something goes bad: " + e);
         }
     }
 }

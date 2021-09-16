@@ -1,55 +1,0 @@
-
-Rtranslate.Translator#connectionBuilder(Ljava/net/URL;)Ljava/net/HttpURLConnection;`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java3$ 3(5"1*è
-1`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java45 4(8ãà
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java45 4(I
-%0java.net.URLConnection"5java.net.URL#openConnection()Ljava/net/URLConnection;*
-
-urljava.net.URL2openConnection()¯
-¬
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java4 4(J"
-connjava.net.HttpURLConnection"__id*
-
-%0java.net.URLConnection}
-{
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java5 5(.	
-%1int"__id*
-""èå
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java5 5(/
-
-%2void",java.net.URLConnection#setConnectTimeout(I)V*$
-"
-connjava.net.HttpURLConnection*
-	
-%1int2setConnectTimeout(I)‹
-ˆ
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java6  6(+
-%3java.lang.String"__id*
-""‹
-ˆ
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java6- 6(:
-%4java.lang.String"__id*
-""×Ô
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java6 6(;
-
-%5void"Pjava.net.URLConnection#setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V*$
-"
-connjava.net.HttpURLConnection*
-
-%3java.lang.String*
-
-%4java.lang.String28setRequestProperty(Ljava/lang/String;Ljava/lang/String;)"ˆ
-`
-V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java7 7($
-"
-connjava.net.HttpURLConnection:
-urljava.net.URLB"
-translate.Translator

@@ -7,7 +7,7 @@ import translate.Translator;
 import java.io.IOException;
 import java.sql.Time;
 
-public class TranslatorParallel {
+public class TranslatorParallelTest {
 
     @Test(threadPoolSize = 10, invocationCount = 20, timeOut = 1000)
     public void TestTranslation() throws IOException {
