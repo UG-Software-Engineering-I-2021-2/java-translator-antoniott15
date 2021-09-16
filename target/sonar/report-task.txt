@@ -3,5 +3,5 @@ projectKey=org.example:JavaTranslate-antoniott15
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.23273
 dashboardUrl=https://sonarcloud.io/dashboard?id=org.example%3AJavaTranslate-antoniott15
-ceTaskId=AXvtQK0MjWeJRfcwLNA1
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXvtQK0MjWeJRfcwLNA1
+ceTaskId=AXvtQkimUpKr67vT-9_F
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXvtQkimUpKr67vT-9_F

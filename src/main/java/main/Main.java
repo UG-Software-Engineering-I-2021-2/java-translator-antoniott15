@@ -10,16 +10,15 @@ public class Main {
     static final String SPANISH_LANGUAGE = "es";
     static final Logger CUSTOM_LOGGER = Logger.getLogger(Main.class.getName());
 
-    public void main() {
+    public void main() throws IOException {
         Scanner input = new Scanner(System.in);
         CUSTOM_LOGGER.info("Escribe la oracion a traducir (español a ingles): ");
         String textToTranslate = input.nextLine();
+        translate(textToTranslate);
+    }
 
-        try {
-            String response = Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate);
-            CUSTOM_LOGGER.info(response);
-        }catch (IOException e) {
-            CUSTOM_LOGGER.info("Whoops something goes bad: " + e);
-        }
+
+    public static String translate(String textToTranslate) throws IOException {
+        return Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate);
     }
 }
