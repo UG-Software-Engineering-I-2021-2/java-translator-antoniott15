@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 93, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.234 sec <<< FAILURE!
+TestConnBuilderConnSuccess(translatorTest.TranslatorTest)  Time elapsed: 0.272 sec  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [4000]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at translatorTest.TranslatorTest.TestConnBuilderConnSuccess(TranslatorTest.java:31)
+
+TestUrlBuilderSuccess(translatorTest.TranslatorTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+java.lang.AssertionError: expected [https://script.google.com/macros/s/AKfycbz9NhqBIiBztjNDKRcyI0zo3Wq12b7e-eXSDzx0wNsQf2WW-IDmJIfp6_jJJd8Sp_oO/exec?q=xd&target=some&source=some] but found [https://script.google.com/macros/s/AKfycbxJSBqm1GK9L2Rmw9Ru3UTJpY3cnky-1-gul_Po9aL0LhWrhkK0kLlnSGvRkqsfxnp5/exec?q=xd&target=some&source=some]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at translatorTest.TranslatorTest.TestUrlBuilderSuccess(TranslatorTest.java:18)
+
