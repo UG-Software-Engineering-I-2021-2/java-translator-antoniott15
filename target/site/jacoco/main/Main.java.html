@@ -15,7 +15,11 @@ import translate.Translator;
 <span class="nc" id="L15">        CUSTOM_LOGGER.info(&quot;Escribe la oracion a traducir (español a ingles): &quot;);</span>
 <span class="nc" id="L16">        String textToTranslate = input.nextLine();</span>
 
-<span class="nc" id="L18">        CUSTOM_LOGGER.info(String.format(&quot;La oracion al ingles es: %s&quot;, Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate)));</span>
-<span class="nc" id="L19">    }</span>
+<span class="nc" id="L18">        String response = Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate);</span>
+
+<span class="nc bnc" id="L20" title="All 2 branches missed.">        if(response.length() &gt;= 0) {</span>
+<span class="nc" id="L21">            CUSTOM_LOGGER.info(String.format(&quot;La oracion al ingles es: %s&quot;, response));</span>
+        }
+<span class="nc" id="L23">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
