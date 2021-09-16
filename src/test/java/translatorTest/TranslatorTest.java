@@ -2,7 +2,6 @@ package translatorTest;
 
 
 import translate.Translator;
-import main.Main;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

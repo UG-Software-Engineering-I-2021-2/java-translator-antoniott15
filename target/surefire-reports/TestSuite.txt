@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 11, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.448 sec <<< FAILURE!
-TestMainTranslatorSuccess(translatorTest.MainTest)  Time elapsed: 0.016 sec  <<< FAILURE!
-java.lang.NoSuchMethodError: 'java.lang.String main.Main.translate(java.lang.String, java.lang.String)'
-	at translatorTest.MainTest.TestMainTranslatorSuccess(MainTest.java:15)
-
