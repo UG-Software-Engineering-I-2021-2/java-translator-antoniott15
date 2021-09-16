@@ -1,0 +1,7 @@
+organization=ug-software-engineering-i-2021-2
+projectKey=org.example:JavaTranslate-antoniott15
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.23273
+dashboardUrl=https://sonarcloud.io/dashboard?id=org.example%3AJavaTranslate-antoniott15
+ceTaskId=AXvtOB-fXKQaEJ20Deco
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXvtOB-fXKQaEJ20Deco
