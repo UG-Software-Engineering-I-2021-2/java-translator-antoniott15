@@ -1,0 +1,40 @@
+
+itranslate.Translator#urlBuilder(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;`
+V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java/ /(#"1*€
+1`
+V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java0 0(‹
+ˆ
+`
+V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java0= 0(E
+%0java.lang.String"__id*
+""‘
+Ž
+`
+V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java0F 0(f
+%1java.lang.String"Rjava.net.URLEncoder#encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;*"
+java.net.URLEncoder*
+
+textjava.lang.String*	
+UTF-8ø
+õ
+`
+V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java0 0(z
+%2java.lang.String"Pjava.lang.String#format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;*"
+java.lang.String*
+%s?q=%s&target=%s&source=%s*
+
+%0java.lang.String*
+
+%1java.lang.String*
+
+langTojava.lang.String*
+
+langFromjava.lang.String"|
+`
+V/Users/antoniotoche/IdeaProjects/JavaTranslate/src/main/java/translate/Translator.java0 0({
+
+%2java.lang.String:
+langFromjava.lang.String:
+langTojava.lang.String:
+textjava.lang.StringB"
+translate.Translator
