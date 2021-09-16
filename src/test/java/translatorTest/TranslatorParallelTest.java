@@ -13,10 +13,11 @@ public class TranslatorParallelTest {
     public void TestTranslation() throws IOException {
         long begin = System.currentTimeMillis();
         String translate = Translator.translate("es","en","Hola Mundo");
-        Assert.assertEquals(translate, "Hello World");
         long finish = System.currentTimeMillis();
+        Assert.assertEquals(translate, "Hello World");
 
-        if(finish-begin > 4000000) {
+
+        if(finish-begin > 40000000) {
             Assert.fail();
         }
     }
