@@ -9,7 +9,7 @@ import java.sql.Time;
 
 public class TranslatorParallelTest {
 
-    @Test(threadPoolSize = 10, invocationCount = 20, timeOut = 1000)
+    @Test(threadPoolSize = 10, invocationCount = 20, timeOut = 100)
     public void TestTranslation() throws IOException {
         long begin = System.currentTimeMillis();
         String translate = Translator.translate("es","en","Hola Mundo");
