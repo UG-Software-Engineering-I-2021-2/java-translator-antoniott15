@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="33" failures="20" name="TestSuite" time="40.232" errors="0" skipped="0">
+<testsuite tests="33" failures="20" name="TestSuite" time="28.963" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+0"/>
@@ -58,20 +58,20 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderConnSuccess" time="0.364"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateFail" time="2.059"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateSuccess" time="1.047"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderConnSuccess" time="0.28"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateFail" time="3.475"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateSuccess" time="1.717"/>
   <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderUserAgentSuccess" time="0"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyFrom" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyText" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyTo" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailFullText" time="0.001"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyFrom" time="0.002"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyText" time="0.002"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyTo" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailFullText" time="0.002"/>
   <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderFail" time="0.003"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderSuccess" time="0.001"/>
-  <testcase classname="main.MainTest" name="testFromLanguage" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderSuccess" time="0.002"/>
+  <testcase classname="main.MainTest" name="testFromLanguage" time="0.001"/>
   <testcase classname="main.MainTest" name="testToLanguage" time="0"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="0.999">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="0.548">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -88,8 +88,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.341">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="0.854">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -106,8 +106,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.736">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="0.959">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -124,8 +124,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.736">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -142,8 +142,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.742">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -160,9 +160,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="main.MainTest" name="testTranslate" time="1.743"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.743">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.028">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -179,8 +178,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.771">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.028">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -197,8 +196,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.778">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="main.MainTest" name="testTranslate" time="1.158"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.2">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -215,8 +215,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.779">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.202">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -233,8 +233,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.779">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.205">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -251,8 +251,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.782">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.206">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -269,8 +269,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.783">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.221">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -287,8 +287,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.783">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.224">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -305,8 +305,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.783">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.224">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -323,8 +323,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.811">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.224">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -341,8 +341,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.85">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.235">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -359,8 +359,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.863">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.238">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -377,8 +377,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.868">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.238">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -395,8 +395,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="2.041">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.238">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -413,8 +413,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </failure>
   </testcase>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="2.043">
-    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 500
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="1.249">
+    <failure message="Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000" type="org.testng.internal.thread.ThreadTimeoutException">org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn&apos;t finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)

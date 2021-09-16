@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 33, Failures: 20, Errors: 0, Skipped: 0, Time elapsed: 7.334 sec <<< FAILURE!
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 0.999 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+Tests run: 33, Failures: 20, Errors: 0, Skipped: 0, Time elapsed: 9.284 sec <<< FAILURE!
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 0.548 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -19,8 +19,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.341 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 0.854 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -36,8 +36,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.736 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 0.959 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -53,8 +53,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.736 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -70,8 +70,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.742 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -87,8 +87,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.743 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.028 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -104,8 +104,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.771 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.028 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -121,8 +121,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.778 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.2 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -138,8 +138,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.779 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.202 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -155,8 +155,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.779 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.205 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -172,8 +172,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.782 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.206 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -189,8 +189,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.783 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.221 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -206,8 +206,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.783 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.224 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -223,8 +223,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.783 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.224 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -240,8 +240,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.811 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.224 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -257,8 +257,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.85 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.235 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -274,8 +274,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.863 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.238 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -291,8 +291,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.868 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.238 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -308,8 +308,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 2.041 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.238 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
@@ -325,8 +325,8 @@ org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.Transla
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 
-TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 2.043 sec  <<< FAILURE!
-org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 500
+TestTranslation(translatorTest.TranslatorParallelTest)  Time elapsed: 1.249 sec  <<< FAILURE!
+org.testng.internal.thread.ThreadTimeoutException: Method translatorTest.TranslatorParallelTest.TestTranslation() didn't finish within the time-out 1000
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:322)
 	at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:280)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:605)
