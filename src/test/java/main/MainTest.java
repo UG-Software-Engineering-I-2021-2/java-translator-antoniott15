@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 public class MainTest  {
 
     @Test
-    public void testToLenguage() {
+    public void testToLanguage() {
         String en = Main.ENGLISH_LANGUAGE;
         Assert.assertEquals(en,"en");
     }
 
     @Test
-    public void testFromLenguage() {
+    public void testFromLanguage() {
         String en = Main.SPANISH_LANGUAGE;
         Assert.assertEquals(en,"es");
     }
