@@ -15,6 +15,10 @@ public class Main {
         CUSTOM_LOGGER.info("Escribe la oracion a traducir (español a ingles): ");
         String textToTranslate = input.nextLine();
 
-        CUSTOM_LOGGER.info(String.format("La oracion al ingles es: %s", Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate)));
+        String response = Translator.translate(SPANISH_LANGUAGE, ENGLISH_LANGUAGE, textToTranslate);
+
+        if(response.length() >= 0) {
+            CUSTOM_LOGGER.info(String.format("La oracion al ingles es: %s", response));
+        }
     }
 }

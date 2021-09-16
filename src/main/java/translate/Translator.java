@@ -9,10 +9,12 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class Translator {
-    static final String baseURL = "https://script.google.com/macros/s/AKfycbz9NhqBIiBztjNDKRcyI0zo3Wq12b7e-eXSDzx0wNsQf2WW-IDmJIfp6_jJJd8Sp_oO/exec";
-    static final int RequestTimeOut = 400;
-    static final String RequestPropertyKey = "User-Agent";
-    static final String RequestPropertyValue = "Mozilla/5.0";
+    static final String BASE_URL = "https://script.google.com/macros/s/AKfycbz9NhqBIiBztjNDKRcyI0zo3Wq12b7e-eXSDzx0wNsQf2WW-IDmJIfp6_jJJd8Sp_oO/exec";
+    static final int REQUEST_TIMEOUT = 400;
+    static final String REQUEST_KEY = "User-Agent";
+    static final String REQUEST_VALUE = "Mozilla/5.0";
+
+    private Translator() {}
 
     public static String translate(String langFrom, String langTo, String text) throws IOException {
         if(text.length() >= 500 || text.length() == 0) {
@@ -43,13 +45,13 @@ public class Translator {
     }
 
     public static String urlBuilder(String langFrom, String langTo, String text) throws UnsupportedEncodingException {
-        return  String.format("%s?q=%s&target=%s&source=%s", baseURL,URLEncoder.encode(text, "UTF-8"), langTo, langFrom );
+        return  String.format("%s?q=%s&target=%s&source=%s", BASE_URL,URLEncoder.encode(text, "UTF-8"), langTo, langFrom );
     }
 
     public static HttpURLConnection connectionBuilder(URL url) throws IOException {
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        conn.setConnectTimeout(RequestTimeOut);
-        conn.setRequestProperty(RequestPropertyKey, RequestPropertyValue);
+        conn.setConnectTimeout(REQUEST_TIMEOUT);
+        conn.setRequestProperty(REQUEST_KEY, REQUEST_VALUE);
         return conn;
     }
 }
