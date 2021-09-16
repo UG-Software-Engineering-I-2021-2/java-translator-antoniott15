@@ -16,7 +16,7 @@ public class TranslatorParallelTest {
         Assert.assertEquals(translate, "Hello World");
         long finish = System.currentTimeMillis();
 
-        if(finish-begin > 400000) {
+        if(finish-begin > 1000000) {
             Assert.fail();
         }
     }
