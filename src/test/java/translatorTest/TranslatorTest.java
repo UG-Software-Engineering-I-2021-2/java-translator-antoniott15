@@ -15,20 +15,20 @@ public class TranslatorTest {
     @Test
     public void TestUrlBuilderSuccess() throws UnsupportedEncodingException {
         String finalUrl = Translator.urlBuilder("some","some","xd");
-        Assert.assertEquals(finalUrl,"https://script.google.com/macros/s/AKfycbxJSBqm1GK9L2Rmw9Ru3UTJpY3cnky-1-gul_Po9aL0LhWrhkK0kLlnSGvRkqsfxnp5/exec?q=xd&target=some&source=some");
+        Assert.assertEquals(finalUrl,"https://script.google.com/macros/s/AKfycbx_5uqy4vq_QzCrbvHP3seLtRqgHDQhkTJsLw31n-GUMYjW-Fd-89NCz9KKqXAdJqii/exec?q=xd&target=some&source=some");
     }
 
     @Test
     public void TestUrlBuilderFail() throws UnsupportedEncodingException {
         String finalUrl = Translator.urlBuilder("somsse","sss","xd");
-        Assert.assertNotEquals(finalUrl,"https://script.google.com/macros/s/AKfycbz9NhqBIiBztjNDKRcyI0zo3Wq12b7e-eXSDzx0wNsQf2WW-IDmJIfp6_jJJd8Sp_oO/exec?q=xddd&target=some&source=some");
+        Assert.assertNotEquals(finalUrl,"https://script.google.com/macros/s/AKfycbx_5uqy4vq_QzCrbvHP3seLtRqgHDQhkTJsLw31n-GUMYjW-Fd-89NCz9KKqXAdJqii/exec?q=xddd&target=some&source=some");
     }
 
     @Test
     public void TestConnBuilderConnSuccess() throws IOException {
         URL url = new URL("https://someurl.com");
         HttpURLConnection conn = Translator.connectionBuilder(url);
-        Assert.assertEquals(conn.getConnectTimeout(), 4000);
+        Assert.assertEquals(conn.getConnectTimeout(), 400);
     }
 
     @Test
