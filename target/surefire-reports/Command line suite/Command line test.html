@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>93/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>92/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 16 01:45:26 PET 2021</td>
+<td>Started on:</td><td>Thu Sep 16 21:00:10 PET 2021</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17409 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15897 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,85 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td><div><pre>java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:290)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:497)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:600)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:379)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1120)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2872)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2782)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1915)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1577)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at translate.Translator.translate(Translator.java:38)
+	at translatorTest.TranslatorParallelTest.TestTranslation(TranslatorParallelTest.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace304341221", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace304341221'><pre>java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:290)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:497)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:600)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:379)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1120)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2872)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2782)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1915)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1577)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at translate.Translator.translate(Translator.java:38)
+	at translatorTest.TranslatorParallelTest.TestTranslation(TranslatorParallelTest.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+</pre></div></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -82,12 +161,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='translatorTest.TranslatorTest.TestConnBuilderTranslateFail()'><b>TestConnBuilderTranslateFail</b><br>Test class: translatorTest.TranslatorTest</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>translatorTest.TranslatorTest@448c8166</td></tr>
 <tr>
 <td title='translatorTest.TranslatorTest.TestConnBuilderTranslateSuccess()'><b>TestConnBuilderTranslateSuccess</b><br>Test class: translatorTest.TranslatorTest</td>
 <td></td>
-<td>3</td>
+<td>1</td>
 <td>translatorTest.TranslatorTest@448c8166</td></tr>
 <tr>
 <td title='translatorTest.TranslatorTest.TestConnBuilderUserAgentSuccess()'><b>TestConnBuilderUserAgentSuccess</b><br>Test class: translatorTest.TranslatorTest</td>
@@ -301,326 +380,11 @@ function toggleAllBoxes() {
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
 <td></td>
-<td>3</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
 <td>4</td>
 <td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
 <td></td>
-<td>4</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>4</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>5</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
 <td>6</td>
 <td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
 <tr>
@@ -631,47 +395,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
 <td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
-<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
-<tr>
-<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
-<td></td>
-<td>6</td>
+<td>7</td>
 <td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
@@ -686,17 +410,367 @@ function toggleAllBoxes() {
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
 <td></td>
-<td>8</td>
+<td>9</td>
 <td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
 <td></td>
-<td>8</td>
+<td>9</td>
 <td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
 <tr>
 <td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
 <td></td>
-<td>8</td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>9</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>11</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
+<td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
+<tr>
+<td title='translatorTest.TranslatorParallelTest.TestTranslation()'><b>TestTranslation</b><br>Test class: translatorTest.TranslatorParallelTest</td>
+<td></td>
+<td>10</td>
 <td>translatorTest.TranslatorParallelTest@4470fbd6</td></tr>
 <tr>
 <td title='translatorTest.TranslatorTest.TestUrlBuilderFail()'><b>TestUrlBuilderFail</b><br>Test class: translatorTest.TranslatorTest</td>

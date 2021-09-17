@@ -3,12 +3,11 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
-      <class name="translatorTest.TranslatorTest">
+      <class name="translatorTest.TranslatorParallelTest">
         <methods>
-          <include name="TestConnBuilderConnSuccess"/>
-          <include name="TestUrlBuilderSuccess"/>
+          <include name="TestTranslation"/>
         </methods>
-      </class> <!-- translatorTest.TranslatorTest -->
+      </class> <!-- translatorTest.TranslatorParallelTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

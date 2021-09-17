@@ -15,13 +15,13 @@ public class TranslatorTest {
     @Test
     public void TestUrlBuilderSuccess() throws UnsupportedEncodingException {
         String finalUrl = Translator.urlBuilder("some","some","xd");
-        Assert.assertEquals(finalUrl,"https://script.google.com/macros/s/AKfycbx_5uqy4vq_QzCrbvHP3seLtRqgHDQhkTJsLw31n-GUMYjW-Fd-89NCz9KKqXAdJqii/exec?q=xd&target=some&source=some");
+        Assert.assertEquals(finalUrl,"https://script.google.com/macros/s/AKfycbwS55pdBBrnicusnRvbfhOY3id4M061B1mcR6xP2R3ebLZ3PLNpKmL7FQkQUqvD9pEq/exec?q=xd&target=some&source=some");
     }
 
     @Test
     public void TestUrlBuilderFail() throws UnsupportedEncodingException {
         String finalUrl = Translator.urlBuilder("somsse","sss","xd");
-        Assert.assertNotEquals(finalUrl,"https://script.google.com/macros/s/AKfycbx_5uqy4vq_QzCrbvHP3seLtRqgHDQhkTJsLw31n-GUMYjW-Fd-89NCz9KKqXAdJqii/exec?q=xddd&target=some&source=some");
+        Assert.assertNotEquals(finalUrl,"https://script.google.com/macros/s/AKfycbwS55pdBBrnicusnRvbfhOY3id4M061B1mcR6xP2R3ebLZ3PLNpKmL7FQkQUqvD9pEq/exec?q=xddd&target=some&source=some");
     }
 
     @Test

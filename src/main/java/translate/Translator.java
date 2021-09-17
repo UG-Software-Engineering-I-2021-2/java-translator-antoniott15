@@ -9,7 +9,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 public class Translator {
-    static final String BASE_URL = "https://script.google.com/macros/s/AKfycbx_5uqy4vq_QzCrbvHP3seLtRqgHDQhkTJsLw31n-GUMYjW-Fd-89NCz9KKqXAdJqii/exec";
+    static final String BASE_URL = "https://script.google.com/macros/s/AKfycbwS55pdBBrnicusnRvbfhOY3id4M061B1mcR6xP2R3ebLZ3PLNpKmL7FQkQUqvD9pEq/exec";
     static final int REQUEST_TIMEOUT = 400;
     static final String REQUEST_KEY = "User-Agent";
     static final String REQUEST_VALUE = "Mozilla/5.0";

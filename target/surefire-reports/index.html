@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">93 methods,   93 passed</span>
+                    <span class="method-stats">93 methods, 1 failed,   92 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="translatorTest.TranslatorParallelTest" class="method navigator-link" hash-for-method="TestTranslation">TestTranslation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -539,11 +553,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="translatorTest.TranslatorParallelTest" class="method navigator-link" hash-for-method="TestTranslation">TestTranslation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="translatorTest.TranslatorTest" class="method navigator-link" hash-for-method="TestUrlBuilderFail">TestUrlBuilderFail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -579,6 +588,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">translatorTest.TranslatorParallelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestTranslation">
+                  </a> <!-- TestTranslation -->
+                  <span class="method-name">TestTranslation</span>
+                  <div class="stack-trace">java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:290)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:497)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:600)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:379)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1120)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2872)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2782)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1915)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1577)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at translate.Translator.translate(Translator.java:38)
+	at translatorTest.TranslatorParallelTest.TestTranslation(TranslatorParallelTest.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -1245,13 +1297,6 @@
                   <span class="method-name">TestTranslation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TestTranslation">
-                  </a> <!-- TestTranslation -->
-                  <span class="method-name">TestTranslation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Command_line_suite-class-passed -->
         </div> <!-- panel Command_line_suite -->
@@ -1311,349 +1356,349 @@ data.addRows(93);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TestTranslation')
 data.setCell(0, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(0, 3, 8581);
+data.setCell(0, 3, 11108);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TestTranslation')
 data.setCell(1, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(1, 3, 8581);
+data.setCell(1, 3, 11107);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'TestTranslation')
 data.setCell(2, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(2, 3, 8579);
+data.setCell(2, 3, 11104);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'TestTranslation')
 data.setCell(3, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(3, 3, 8578);
+data.setCell(3, 3, 11102);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'TestTranslation')
 data.setCell(4, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(4, 3, 8502);
+data.setCell(4, 3, 11071);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TestTranslation')
 data.setCell(5, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(5, 3, 6683);
+data.setCell(5, 3, 11061);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'TestTranslation')
 data.setCell(6, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(6, 3, 6477);
+data.setCell(6, 3, 11050);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'TestTranslation')
 data.setCell(7, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(7, 3, 6447);
+data.setCell(7, 3, 11044);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'TestTranslation')
 data.setCell(8, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(8, 3, 6442);
+data.setCell(8, 3, 11042);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'TestTranslation')
 data.setCell(9, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(9, 3, 6442);
+data.setCell(9, 3, 11040);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'TestTranslation')
 data.setCell(10, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(10, 3, 6428);
+data.setCell(10, 3, 11033);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TestTranslation')
 data.setCell(11, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(11, 3, 6426);
+data.setCell(11, 3, 10877);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'TestTranslation')
 data.setCell(12, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(12, 3, 6425);
+data.setCell(12, 3, 10876);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'TestTranslation')
 data.setCell(13, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(13, 3, 6425);
+data.setCell(13, 3, 10863);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'TestTranslation')
 data.setCell(14, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(14, 3, 6424);
+data.setCell(14, 3, 10861);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'TestTranslation')
 data.setCell(15, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(15, 3, 6368);
+data.setCell(15, 3, 10834);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'TestTranslation')
 data.setCell(16, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(16, 3, 5818);
+data.setCell(16, 3, 10831);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'TestTranslation')
 data.setCell(17, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(17, 3, 5778);
+data.setCell(17, 3, 10825);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'TestTranslation')
 data.setCell(18, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(18, 3, 5767);
+data.setCell(18, 3, 10821);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'TestTranslation')
 data.setCell(19, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(19, 3, 5759);
+data.setCell(19, 3, 10807);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'TestTranslation')
 data.setCell(20, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(20, 3, 5759);
+data.setCell(20, 3, 10760);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'TestTranslation')
 data.setCell(21, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(21, 3, 5754);
+data.setCell(21, 3, 10696);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'TestTranslation')
 data.setCell(22, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(22, 3, 5753);
+data.setCell(22, 3, 10663);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'TestTranslation')
 data.setCell(23, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(23, 3, 5750);
+data.setCell(23, 3, 10637);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'TestTranslation')
 data.setCell(24, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(24, 3, 5739);
+data.setCell(24, 3, 10632);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'TestTranslation')
 data.setCell(25, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(25, 3, 5728);
+data.setCell(25, 3, 10589);
 data.setCell(26, 0, 26)
 data.setCell(26, 1, 'TestTranslation')
 data.setCell(26, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(26, 3, 5724);
+data.setCell(26, 3, 10527);
 data.setCell(27, 0, 27)
 data.setCell(27, 1, 'TestTranslation')
 data.setCell(27, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(27, 3, 5723);
+data.setCell(27, 3, 10519);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'TestTranslation')
 data.setCell(28, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(28, 3, 5723);
+data.setCell(28, 3, 10489);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'TestTranslation')
 data.setCell(29, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(29, 3, 5721);
+data.setCell(29, 3, 10401);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'TestTranslation')
 data.setCell(30, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(30, 3, 5718);
+data.setCell(30, 3, 10395);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'TestTranslation')
 data.setCell(31, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(31, 3, 5718);
+data.setCell(31, 3, 10387);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'TestTranslation')
 data.setCell(32, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(32, 3, 5716);
+data.setCell(32, 3, 10380);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'TestTranslation')
 data.setCell(33, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(33, 3, 5713);
+data.setCell(33, 3, 10374);
 data.setCell(34, 0, 34)
 data.setCell(34, 1, 'TestTranslation')
 data.setCell(34, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(34, 3, 5705);
+data.setCell(34, 3, 10355);
 data.setCell(35, 0, 35)
 data.setCell(35, 1, 'TestTranslation')
 data.setCell(35, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(35, 3, 5704);
+data.setCell(35, 3, 10354);
 data.setCell(36, 0, 36)
 data.setCell(36, 1, 'TestTranslation')
 data.setCell(36, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(36, 3, 5703);
+data.setCell(36, 3, 10337);
 data.setCell(37, 0, 37)
 data.setCell(37, 1, 'TestTranslation')
 data.setCell(37, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(37, 3, 5689);
+data.setCell(37, 3, 10276);
 data.setCell(38, 0, 38)
 data.setCell(38, 1, 'TestTranslation')
 data.setCell(38, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(38, 3, 5669);
+data.setCell(38, 3, 10275);
 data.setCell(39, 0, 39)
 data.setCell(39, 1, 'TestTranslation')
 data.setCell(39, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(39, 3, 5666);
+data.setCell(39, 3, 10256);
 data.setCell(40, 0, 40)
 data.setCell(40, 1, 'TestTranslation')
 data.setCell(40, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(40, 3, 5664);
+data.setCell(40, 3, 10244);
 data.setCell(41, 0, 41)
 data.setCell(41, 1, 'TestTranslation')
 data.setCell(41, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(41, 3, 5663);
+data.setCell(41, 3, 10229);
 data.setCell(42, 0, 42)
 data.setCell(42, 1, 'TestTranslation')
 data.setCell(42, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(42, 3, 5650);
+data.setCell(42, 3, 10221);
 data.setCell(43, 0, 43)
 data.setCell(43, 1, 'TestTranslation')
 data.setCell(43, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(43, 3, 5649);
+data.setCell(43, 3, 10218);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'TestTranslation')
 data.setCell(44, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(44, 3, 5629);
+data.setCell(44, 3, 10210);
 data.setCell(45, 0, 45)
 data.setCell(45, 1, 'TestTranslation')
 data.setCell(45, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(45, 3, 5624);
+data.setCell(45, 3, 10208);
 data.setCell(46, 0, 46)
 data.setCell(46, 1, 'TestTranslation')
 data.setCell(46, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(46, 3, 5600);
+data.setCell(46, 3, 10207);
 data.setCell(47, 0, 47)
 data.setCell(47, 1, 'TestTranslation')
 data.setCell(47, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(47, 3, 5577);
+data.setCell(47, 3, 10204);
 data.setCell(48, 0, 48)
 data.setCell(48, 1, 'TestTranslation')
 data.setCell(48, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(48, 3, 5560);
+data.setCell(48, 3, 10202);
 data.setCell(49, 0, 49)
 data.setCell(49, 1, 'TestTranslation')
 data.setCell(49, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(49, 3, 5521);
+data.setCell(49, 3, 10196);
 data.setCell(50, 0, 50)
 data.setCell(50, 1, 'TestTranslation')
 data.setCell(50, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(50, 3, 5276);
+data.setCell(50, 3, 10176);
 data.setCell(51, 0, 51)
 data.setCell(51, 1, 'TestTranslation')
 data.setCell(51, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(51, 3, 5207);
+data.setCell(51, 3, 10175);
 data.setCell(52, 0, 52)
 data.setCell(52, 1, 'TestTranslation')
 data.setCell(52, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(52, 3, 5160);
+data.setCell(52, 3, 10134);
 data.setCell(53, 0, 53)
 data.setCell(53, 1, 'TestTranslation')
 data.setCell(53, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(53, 3, 5160);
+data.setCell(53, 3, 9973);
 data.setCell(54, 0, 54)
 data.setCell(54, 1, 'TestTranslation')
 data.setCell(54, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(54, 3, 5160);
+data.setCell(54, 3, 9963);
 data.setCell(55, 0, 55)
 data.setCell(55, 1, 'TestTranslation')
 data.setCell(55, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(55, 3, 5158);
+data.setCell(55, 3, 9962);
 data.setCell(56, 0, 56)
 data.setCell(56, 1, 'TestTranslation')
 data.setCell(56, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(56, 3, 5158);
+data.setCell(56, 3, 9918);
 data.setCell(57, 0, 57)
 data.setCell(57, 1, 'TestTranslation')
 data.setCell(57, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(57, 3, 5157);
+data.setCell(57, 3, 9912);
 data.setCell(58, 0, 58)
 data.setCell(58, 1, 'TestTranslation')
 data.setCell(58, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(58, 3, 5155);
+data.setCell(58, 3, 9803);
 data.setCell(59, 0, 59)
 data.setCell(59, 1, 'TestTranslation')
 data.setCell(59, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(59, 3, 5153);
+data.setCell(59, 3, 9783);
 data.setCell(60, 0, 60)
 data.setCell(60, 1, 'TestTranslation')
 data.setCell(60, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(60, 3, 5152);
+data.setCell(60, 3, 9714);
 data.setCell(61, 0, 61)
 data.setCell(61, 1, 'TestTranslation')
 data.setCell(61, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(61, 3, 5142);
+data.setCell(61, 3, 9669);
 data.setCell(62, 0, 62)
 data.setCell(62, 1, 'TestTranslation')
 data.setCell(62, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(62, 3, 5134);
+data.setCell(62, 3, 9659);
 data.setCell(63, 0, 63)
 data.setCell(63, 1, 'TestTranslation')
 data.setCell(63, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(63, 3, 5129);
+data.setCell(63, 3, 9649);
 data.setCell(64, 0, 64)
 data.setCell(64, 1, 'TestTranslation')
 data.setCell(64, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(64, 3, 5129);
+data.setCell(64, 3, 9646);
 data.setCell(65, 0, 65)
 data.setCell(65, 1, 'TestTranslation')
 data.setCell(65, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(65, 3, 5125);
+data.setCell(65, 3, 9642);
 data.setCell(66, 0, 66)
 data.setCell(66, 1, 'TestTranslation')
 data.setCell(66, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(66, 3, 5122);
+data.setCell(66, 3, 9611);
 data.setCell(67, 0, 67)
 data.setCell(67, 1, 'TestTranslation')
 data.setCell(67, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(67, 3, 5119);
+data.setCell(67, 3, 9448);
 data.setCell(68, 0, 68)
 data.setCell(68, 1, 'TestTranslation')
 data.setCell(68, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(68, 3, 5118);
+data.setCell(68, 3, 9438);
 data.setCell(69, 0, 69)
 data.setCell(69, 1, 'TestTranslation')
 data.setCell(69, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(69, 3, 5103);
+data.setCell(69, 3, 9423);
 data.setCell(70, 0, 70)
 data.setCell(70, 1, 'TestTranslation')
 data.setCell(70, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(70, 3, 5102);
+data.setCell(70, 3, 9400);
 data.setCell(71, 0, 71)
 data.setCell(71, 1, 'TestTranslation')
 data.setCell(71, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(71, 3, 5101);
+data.setCell(71, 3, 9385);
 data.setCell(72, 0, 72)
 data.setCell(72, 1, 'TestTranslation')
 data.setCell(72, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(72, 3, 5081);
+data.setCell(72, 3, 9371);
 data.setCell(73, 0, 73)
 data.setCell(73, 1, 'TestTranslation')
 data.setCell(73, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(73, 3, 5080);
+data.setCell(73, 3, 9365);
 data.setCell(74, 0, 74)
 data.setCell(74, 1, 'TestTranslation')
 data.setCell(74, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(74, 3, 5077);
+data.setCell(74, 3, 8437);
 data.setCell(75, 0, 75)
 data.setCell(75, 1, 'TestTranslation')
 data.setCell(75, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(75, 3, 5069);
+data.setCell(75, 3, 8122);
 data.setCell(76, 0, 76)
 data.setCell(76, 1, 'TestTranslation')
 data.setCell(76, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(76, 3, 4795);
+data.setCell(76, 3, 7382);
 data.setCell(77, 0, 77)
 data.setCell(77, 1, 'TestTranslation')
 data.setCell(77, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(77, 3, 4689);
+data.setCell(77, 3, 6862);
 data.setCell(78, 0, 78)
 data.setCell(78, 1, 'TestTranslation')
 data.setCell(78, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(78, 3, 4287);
+data.setCell(78, 3, 6661);
 data.setCell(79, 0, 79)
 data.setCell(79, 1, 'TestTranslation')
 data.setCell(79, 2, 'translatorTest.TranslatorParallelTest')
-data.setCell(79, 3, 3779);
+data.setCell(79, 3, 4003);
 data.setCell(80, 0, 80)
-data.setCell(80, 1, 'TestConnBuilderTranslateSuccess')
+data.setCell(80, 1, 'TestConnBuilderTranslateFail')
 data.setCell(80, 2, 'translatorTest.TranslatorTest')
-data.setCell(80, 3, 3470);
+data.setCell(80, 3, 1802);
 data.setCell(81, 0, 81)
-data.setCell(81, 1, 'TestConnBuilderTranslateFail')
+data.setCell(81, 1, 'TestConnBuilderTranslateSuccess')
 data.setCell(81, 2, 'translatorTest.TranslatorTest')
-data.setCell(81, 3, 2784);
+data.setCell(81, 3, 1193);
 data.setCell(82, 0, 82)
 data.setCell(82, 1, 'testTranslate')
 data.setCell(82, 2, 'main.MainTest')
-data.setCell(82, 3, 1983);
+data.setCell(82, 3, 1021);
 data.setCell(83, 0, 83)
 data.setCell(83, 1, 'TestConnBuilderConnSuccess')
 data.setCell(83, 2, 'translatorTest.TranslatorTest')
-data.setCell(83, 3, 267);
+data.setCell(83, 3, 333);
 data.setCell(84, 0, 84)
-data.setCell(84, 1, 'TestTranslateFailEmptyTo')
+data.setCell(84, 1, 'TestUrlBuilderFail')
 data.setCell(84, 2, 'translatorTest.TranslatorTest')
-data.setCell(84, 3, 4);
+data.setCell(84, 3, 20);
 data.setCell(85, 0, 85)
-data.setCell(85, 1, 'TestConnBuilderUserAgentSuccess')
+data.setCell(85, 1, 'TestTranslateFailFullText')
 data.setCell(85, 2, 'translatorTest.TranslatorTest')
-data.setCell(85, 3, 3);
+data.setCell(85, 3, 4);
 data.setCell(86, 0, 86)
-data.setCell(86, 1, 'TestUrlBuilderFail')
+data.setCell(86, 1, 'TestTranslateFailEmptyFrom')
 data.setCell(86, 2, 'translatorTest.TranslatorTest')
 data.setCell(86, 3, 2);
 data.setCell(87, 0, 87)
@@ -1661,15 +1706,15 @@ data.setCell(87, 1, 'testFromLanguage')
 data.setCell(87, 2, 'main.MainTest')
 data.setCell(87, 3, 2);
 data.setCell(88, 0, 88)
-data.setCell(88, 1, 'TestTranslateFailEmptyFrom')
+data.setCell(88, 1, 'TestConnBuilderUserAgentSuccess')
 data.setCell(88, 2, 'translatorTest.TranslatorTest')
 data.setCell(88, 3, 1);
 data.setCell(89, 0, 89)
-data.setCell(89, 1, 'TestTranslateFailFullText')
+data.setCell(89, 1, 'TestUrlBuilderSuccess')
 data.setCell(89, 2, 'translatorTest.TranslatorTest')
 data.setCell(89, 3, 1);
 data.setCell(90, 0, 90)
-data.setCell(90, 1, 'TestUrlBuilderSuccess')
+data.setCell(90, 1, 'TestTranslateFailEmptyTo')
 data.setCell(90, 2, 'translatorTest.TranslatorTest')
 data.setCell(90, 3, 0);
 data.setCell(91, 0, 91)
@@ -1684,7 +1729,7 @@ window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -1717,377 +1762,379 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestConnBuilderTranslateFail</span>
-                <span class="method-start">272 ms</span>
+                <span class="method-start">347 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestConnBuilderTranslateSuccess</span>
-                <span class="method-start">3069 ms</span>
+                <span class="method-start">2159 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestConnBuilderUserAgentSuccess</span>
-                <span class="method-start">6543 ms</span>
+                <span class="method-start">3357 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslateFailEmptyFrom</span>
-                <span class="method-start">6547 ms</span>
+                <span class="method-start">3365 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslateFailEmptyText</span>
-                <span class="method-start">6551 ms</span>
+                <span class="method-start">3372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslateFailEmptyTo</span>
-                <span class="method-start">6554 ms</span>
+                <span class="method-start">3373 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslateFailFullText</span>
-                <span class="method-start">6559 ms</span>
+                <span class="method-start">3373 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestUrlBuilderFail</span>
-                <span class="method-start">6560 ms</span>
+                <span class="method-start">3378 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestUrlBuilderSuccess</span>
-                <span class="method-start">6563 ms</span>
+                <span class="method-start">3399 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">translatorTest.TranslatorParallelTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6689 ms</span>
+                <span class="method-start">3531 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6689 ms</span>
+                <span class="method-start">3536 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6689 ms</span>
+                <span class="method-start">3539 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6712 ms</span>
+                <span class="method-start">3540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6730 ms</span>
+                <span class="method-start">3540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6730 ms</span>
+                <span class="method-start">3540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6730 ms</span>
+                <span class="method-start">3540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6735 ms</span>
+                <span class="method-start">3540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6735 ms</span>
+                <span class="method-start">3540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6735 ms</span>
+                <span class="method-start">3546 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3631 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3632 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6736 ms</span>
+                <span class="method-start">3633 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3634 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3638 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3640 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6737 ms</span>
+                <span class="method-start">3641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3643 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3643 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3643 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6738 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3646 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3647 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3648 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3648 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3648 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6739 ms</span>
+                <span class="method-start">3649 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6740 ms</span>
+                <span class="method-start">3649 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6741 ms</span>
+                <span class="method-start">3649 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6741 ms</span>
+                <span class="method-start">3654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3654 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6744 ms</span>
+                <span class="method-start">3657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6759 ms</span>
+                <span class="method-start">3657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6781 ms</span>
+                <span class="method-start">3658 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6781 ms</span>
+                <span class="method-start">3857 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6792 ms</span>
+                <span class="method-start">3867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6793 ms</span>
+                <span class="method-start">3874 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6793 ms</span>
+                <span class="method-start">3875 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6793 ms</span>
+                <span class="method-start">3876 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6793 ms</span>
+                <span class="method-start">3877 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6794 ms</span>
+                <span class="method-start">3878 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6794 ms</span>
+                <span class="method-start">3878 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6794 ms</span>
+                <span class="method-start">3880 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6795 ms</span>
+                <span class="method-start">3881 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6795 ms</span>
+                <span class="method-start">3915 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6795 ms</span>
+                <span class="method-start">3924 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6796 ms</span>
+                <span class="method-start">3926 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6815 ms</span>
+                <span class="method-start">3931 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6815 ms</span>
+                <span class="method-start">3935 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6815 ms</span>
+                <span class="method-start">3935 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TestTranslation</span>
-                <span class="method-start">6818 ms</span>
+                <span class="method-start">3937 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">main.MainTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testFromLanguage</span>
-                <span class="method-start">15352 ms</span>
+                <span class="method-start">14813 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testToLanguage</span>
-                <span class="method-start">15355 ms</span>
+                <span class="method-start">14815 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTranslate</span>
-                <span class="method-start">15355 ms</span>
+                <span class="method-start">14815 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

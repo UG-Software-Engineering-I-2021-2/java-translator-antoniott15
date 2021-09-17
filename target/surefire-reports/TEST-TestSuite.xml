@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="93" failures="0" name="TestSuite" time="455.759" errors="0" skipped="0">
+<testsuite tests="93" failures="1" name="TestSuite" time="784.22" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+0"/>
@@ -58,97 +58,121 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderConnSuccess" time="0.267"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateFail" time="2.789"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateSuccess" time="3.475"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderUserAgentSuccess" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyFrom" time="0.003"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyText" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyTo" time="0.002"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailFullText" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderFail" time="0.002"/>
-  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderSuccess" time="0.001"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="3.673"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.147"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.536"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.634"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.924"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.966"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.966"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.97"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.971"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.975"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.975"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.975"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.975"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.977"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.979"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="4.989"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.004"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.004"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.004"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.004"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.004"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.004"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.005"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.008"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.008"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.008"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.008"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.008"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.008"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.179"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.425"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.445"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.447"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.449"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.463"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.469"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.55"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.551"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.553"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.553"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.554"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.559"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.565"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.565"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.565"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.566"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.568"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.57"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.57"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.57"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.57"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.57"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.576"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.58"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.582"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.583"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.597"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.597"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.597"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.597"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.607"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.612"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.613"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="5.662"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.271"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.271"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.271"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.271"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.271"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.274"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.274"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.293"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.295"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.295"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.529"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.425"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.426"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.427"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.427"/>
-  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.427"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderConnSuccess" time="0.342"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateFail" time="1.81"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderTranslateSuccess" time="1.203"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestConnBuilderUserAgentSuccess" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyFrom" time="0.012"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyText" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailEmptyTo" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestTranslateFailFullText" time="0"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderFail" time="0.02"/>
+  <testcase classname="translatorTest.TranslatorTest" name="TestUrlBuilderSuccess" time="0"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="3.643"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.348"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="6.714"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="7.233"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="7.748"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.307"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.995"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.996"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="8.996"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.007"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.067"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.07"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.228"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.235"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.258"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.26"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.262"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.262"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.287"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.306"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.423"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.54"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.791"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.791"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.791"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.799"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.859"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.86"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.862"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.862"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.863"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.865"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.865"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.865"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.865"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.865"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.865"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.866"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.872"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.873"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.874"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.876"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.885"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.978"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.994"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.994"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="9.994"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.007"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.036"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.036"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.045"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.141"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.154"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.171">
+    <failure message="Connect timed out" type="java.net.SocketTimeoutException">java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:290)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:177)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:497)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:600)
+	at java.base/sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:265)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:379)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1120)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect0(HttpURLConnection.java:2872)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.followRedirect(HttpURLConnection.java:2782)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1915)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1577)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at translate.Translator.translate(Translator.java:38)
+	at translatorTest.TranslatorParallelTest.TestTranslation(TranslatorParallelTest.java:15)
+</failure>
+  </testcase>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.254"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.269"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.286"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.326"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.376"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.377"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.445"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.448"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.453"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.651"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.662"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.669"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.669"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.669"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.673"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.673"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.678"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.728"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.729"/>
+  <testcase classname="translatorTest.TranslatorParallelTest" name="TestTranslation" time="10.751"/>
   <testcase classname="main.MainTest" name="testFromLanguage" time="0"/>
   <testcase classname="main.MainTest" name="testToLanguage" time="0"/>
-  <testcase classname="main.MainTest" name="testTranslate" time="1.982"/>
+  <testcase classname="main.MainTest" name="testTranslate" time="1.024"/>
 </testsuite>
